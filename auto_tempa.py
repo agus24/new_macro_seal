@@ -192,6 +192,9 @@ def get_item_from_bank(qty):
         macro.mouseDown()
         mouse.moveMouse(380, 169)
         macro.mouseUp()
+        sleep(0.2)
+        k.send_keys('{ENTER}')
+        sleep(0.2)
 
     sleep(0.5)
     mouse.moveMouse(292, 83)
