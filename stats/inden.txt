@@ -1,0 +1,2989 @@
+
+time 2019-11-24 13:04:15.402068
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:04:23.813795
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:04:31.921456
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:04:40.287304
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:04:48.560868
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:04:56.514208
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -10
+
+time 2019-11-24 13:05:04.795744
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:13.073836
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:21.537342
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:29.760195
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:38.195855
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:46.528113
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:05:54.929755
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:03.047665
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:11.268912
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:20.000429
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:28.258778
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:36.656013
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:06:45.035614
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:06:53.343485
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:01.232375
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:09.476275
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:17.471314
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:25.561616
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:33.812783
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:07:42.092334
+mpw : 5
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:07:50.529459
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:07:58.573198
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:08:06.656965
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:08:15.053427
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:08:23.389797
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:08:31.793368
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:08:39.597603
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:08:47.968996
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:08:56.141889
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:09:04.535972
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:09:12.759839
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:09:21.056274
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:09:29.242035
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:09:37.445838
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -10
+
+time 2019-11-24 13:09:45.629032
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:09:53.885762
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:02.227298
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:10.065023
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:18.214492
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:26.571358
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:34.897083
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:42.739137
+mpw : -5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:10:50.978487
+mpw : 0
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:10:59.279354
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:11:07.259736
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:11:15.652615
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:11:24.039095
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -10
+
+time 2019-11-24 13:11:32.336865
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:11:40.664048
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:11:48.935360
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:11:57.269249
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:05.037987
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:13.445323
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:12:21.688723
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:29.983723
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:38.383641
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:46.642472
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:12:54.887938
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:13:03.229553
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:13:11.021589
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:13:19.400014
+mpw : 10
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:13:27.590813
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:13:35.802841
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:13:43.773199
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:13:52.092207
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:00.404491
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:08.383847
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:16.734705
+mpw : -5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:25.076223
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:32.874458
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:41.214282
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:14:49.472820
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:14:57.795077
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:06.002948
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:14.037843
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:22.334532
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:30.604755
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:38.886815
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:47.193015
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:15:55.463747
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:03.642373
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 20
+
+time 2019-11-24 13:16:11.970722
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:20.261652
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:28.552285
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:36.432650
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:44.690138
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:16:52.955271
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:01.020486
+mpw : 0
+defend : 0
+mspd : 0
+hp : 3
+dmg : 0
+
+time 2019-11-24 13:17:09.421130
+mpw : -10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:17.643242
+mpw : -10
+defend : 0
+mspd : 0
+hp : 1
+dmg : 5
+
+time 2019-11-24 13:17:25.913301
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:34.156331
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:42.457856
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:50.833917
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:17:58.713540
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:06.656367
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:18:14.931043
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:23.240146
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:31.258067
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:39.544842
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:47.358835
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:18:55.706607
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:04.014532
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:19:12.277789
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:20.599996
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:28.629486
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:36.906610
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:45.007296
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:19:53.372271
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:01.309811
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:09.098845
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:17.368703
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:25.691010
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:33.944621
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:42.079306
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:20:50.422821
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:20:58.688267
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:06.523413
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:14.873070
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:23.213351
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:31.097561
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:39.315453
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:21:47.478600
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:21:55.719696
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:03.829087
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:12.335430
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:20.640365
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:29.059066
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:37.026086
+mpw : 0
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:22:45.280281
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:22:53.196150
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:01.006163
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:09.349916
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:17.697394
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:25.953604
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:34.265732
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:42.513347
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:23:50.828691
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:23:59.173312
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:24:07.237981
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:24:15.459587
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:24:23.818399
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:24:32.084539
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:24:40.246612
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:24:48.479617
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:24:56.784185
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:05.095502
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:13.419001
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 10
+
+time 2019-11-24 13:25:21.870001
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:30.181707
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:38.432359
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:46.763387
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:25:55.051958
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:03.377305
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:11.638967
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:19.935458
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:28.216776
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:36.544000
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:44.564728
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:26:52.734341
+mpw : 10
+defend : 0
+mspd : 0
+hp : 2
+dmg : -10
+
+time 2019-11-24 13:27:01.101115
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:09.397875
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:17.686043
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:26.058549
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:34.263450
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:42.595333
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:50.848190
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:27:58.640594
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:06.936797
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:15.243151
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:23.428440
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:31.653537
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:40.022831
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:28:48.421338
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 10
+
+time 2019-11-24 13:28:56.694541
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:05.064945
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:13.178653
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:21.555569
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:29.828444
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:37.871409
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:46.253845
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:29:53.931532
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:01.992664
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:10.441810
+mpw : -10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:18.775629
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 10
+
+time 2019-11-24 13:30:27.059677
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:35.342643
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:43.496441
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:30:51.798187
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:31:00.175393
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:07.969868
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:31:16.203416
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:24.542838
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:32.922505
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:41.210110
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:49.022502
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:31:57.326757
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:05.545013
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:32:13.828833
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:21.859973
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:30.097347
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:38.328965
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:46.691778
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:32:54.614862
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:33:02.884741
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:33:11.097513
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:33:19.104677
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:33:27.500576
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:33:35.741561
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:33:44.021785
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:33:52.302532
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:00.589366
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:08.851567
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:17.121588
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:25.463638
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:34:33.774303
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:34:42.024199
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:50.045755
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:34:58.311865
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:35:06.704172
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:35:15.015574
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:35:23.400360
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:35:31.742812
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:35:40.050539
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:35:48.427348
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:35:56.586382
+mpw : 0
+defend : 0
+mspd : 0
+hp : 4
+dmg : 0
+
+time 2019-11-24 13:36:04.883109
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:13.149203
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:21.494359
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:29.749068
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:37.959964
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:46.316406
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:36:54.453721
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:02.657511
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:11.005338
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:19.340235
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:27.656957
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:37:35.868046
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:44.305141
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:52.124682
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:37:59.866593
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:38:08.271790
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:38:16.086611
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:38:24.236872
+mpw : -10
+defend : 0
+mspd : 0
+hp : -1
+dmg : 10
+
+time 2019-11-24 13:38:32.608012
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:38:40.497042
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:38:48.788426
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:38:56.999612
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:39:04.799340
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:39:13.151236
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:39:21.438681
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:39:29.690468
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:39:38.029163
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:39:45.977814
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:39:54.250379
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:02.516805
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:10.301599
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:18.617537
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:26.934960
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:35.267547
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:43.588174
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:51.850379
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:40:59.942806
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:41:08.292070
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:41:16.640621
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:41:24.953884
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:41:33.203704
+mpw : 0
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:41:41.429673
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:41:49.607238
+mpw : 0
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:41:57.951493
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:05.833952
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:14.129043
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:42:22.416356
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:30.572418
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:39.321797
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:47.376513
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:42:55.681725
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:03.786876
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:11.898633
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:20.150822
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:27.923840
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:36.321025
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:44.597167
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:43:52.854280
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:44:01.172200
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:44:09.358829
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:44:17.606548
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:44:26.004838
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:44:34.334094
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:44:42.633162
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:44:50.956990
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:44:59.316124
+mpw : -5
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:45:07.584036
+mpw : -5
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:45:15.830290
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:45:23.863063
+mpw : -5
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:45:32.064010
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:45:40.059350
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:45:48.363591
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:45:56.712637
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:04.985415
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:13.165245
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:21.260720
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:29.521750
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:37.798053
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:46.098638
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:46:54.380591
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:47:02.632741
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:47:10.999511
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:47:19.292865
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:47:27.588231
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:47:36.057317
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:47:43.843649
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:47:52.200342
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:00.386225
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:08.656574
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:17.022014
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:25.440905
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:33.542458
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:41.870467
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:49.688239
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:48:58.052057
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:49:06.407121
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:49:14.672995
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:49:22.994942
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:49:31.323895
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:49:39.486923
+mpw : 0
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:49:47.760400
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:49:56.051870
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:04.379961
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:12.548476
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:20.746222
+mpw : 5
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:50:29.002698
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:37.264383
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:45.572391
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:50:53.602133
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:01.979482
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:10.259596
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:18.530586
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:26.811430
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:35.105290
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:43.302876
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:51.587916
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:51:59.316504
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:07.660302
+mpw : -5
+defend : 0
+mspd : 0
+hp : -2
+dmg : 0
+
+time 2019-11-24 13:52:15.978901
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:24.095797
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:32.418412
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:40.765293
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:49.115475
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:52:56.967867
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:53:05.207464
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:53:13.495900
+mpw : -5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:53:21.730764
+mpw : -5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:53:29.984570
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:53:38.277254
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 13:53:46.604865
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:53:55.034491
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:54:03.216698
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:54:11.401006
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:54:19.705985
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:54:28.033011
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:54:35.880956
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:54:44.108727
+mpw : 0
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:54:52.398512
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:00.775949
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:09.247878
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:17.515666
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:25.798386
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:34.116217
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:42.415275
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:55:50.874808
+mpw : 0
+defend : 0
+mspd : 0
+hp : -1
+dmg : 0
+
+time 2019-11-24 13:55:59.126063
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:07.519881
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:15.779999
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:24.106316
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:32.422823
+mpw : 5
+defend : 0
+mspd : 0
+hp : 1
+dmg : 0
+
+time 2019-11-24 13:56:40.648907
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:48.915879
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:56:57.281153
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:05.653383
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:13.731355
+mpw : -10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:21.935843
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:30.252703
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:38.188201
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:46.281533
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:57:54.607629
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:58:02.674794
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:58:11.118745
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : -10
+
+time 2019-11-24 13:58:19.460854
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:58:27.614453
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:58:35.887030
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:58:44.203656
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:58:52.435966
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:59:00.672677
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 10
+
+time 2019-11-24 13:59:08.971967
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:59:17.230797
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 13:59:24.950831
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : -5
+
+time 2019-11-24 13:59:33.128571
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:59:41.402810
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 5
+
+time 2019-11-24 13:59:49.679246
+mpw : 10
+defend : 0
+mspd : 0
+hp : 0
+dmg : 20
+
+time 2019-11-24 13:59:57.982628
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 14:00:06.244858
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 14:00:14.529587
+mpw : 0
+defend : 0
+mspd : 0
+hp : 2
+dmg : 0
+
+time 2019-11-24 14:00:22.861031
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 14:00:30.952541
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 14:00:39.261135
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 15:59:02.890615
+mpw : 0
+defend : 0
+mspd : 0
+hp : 3
+dmg : 0
+
+time 2019-11-24 15:59:11.194411
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 15:59:19.168838
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-24 15:59:27.312814
+mpw : 5
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:11:46.394844
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:11:54.286196
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:12:02.150456
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:12:10.018989
+mpw : 0
+defend : 5
+mspd : 0
+hp : 3
+dmg : 0
+
+time 2019-11-26 08:12:58.692579
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:06.526648
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:14.332361
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:22.156269
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:30.023026
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:37.849526
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
+
+time 2019-11-26 08:13:45.670705
+mpw : 0
+defend : 0
+mspd : 0
+hp : 0
+dmg : 0
