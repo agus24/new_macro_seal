@@ -1,18 +1,28 @@
+from time import sleep
 import requests
+import json
+
+
+sending_discord = True
 
 user_list = [
     {
-        "username": "yohanesyoshua",
-        "password": "faisal",
-        "password_bank": "1111"
+        "username": "agus24",
+        "password": "Rahasia24",
+        "password_bank": "1122"
     }
 ]
 
-def get_cookies(username, password):
+targeted_item = [
+    {"item_id": 21084, "item_name": "Manual G20"},
+    {"item_id": 78057, "item_name": "Refinement GXG1"},
+]
+
+def get_cookies(user):
     url = "https://seal-gladius.com/login"
     data = {
-        "username": username,
-        "password": password,
+        "username": user['username'],
+        "password": user['password'],
         "is_ajax": 1
     }
 
@@ -23,61 +33,103 @@ def get_cookies(username, password):
     return None
 
 def get_item_list():
-    data = []
-    cookies = get_cookies(user_list[0]['username'], user_list[0]['password'])
+    cookies = get_cookies(user_list[0])
 
     url = "https://seal-gladius.com/itemmall-dataa"
+    print("checking item")
     response = requests.post(url, data={"page": 1, "jenis": 7}, cookies=cookies).content.decode("utf-8")
+    items = parse_output(response)
+    restock_status, restocked_item = check_restock_status(items)
 
-    texts = response.split("<td>")
+    if restock_status:
+        list_of_item = [f"{item['name']} : {item['qty']}" for item in restocked_item]
+        send_discord_message("**Item Restocked**\n\n**List of item:** \n\n" + "\n".join(list_of_item))
+        buy_item()
+
+    f = open("_restock_list.json", "w")
+    f.write(json.dumps(items, indent=4, sort_keys=True))
+    f.close()
+
+
+def check_restock_status(items):
+    file = open("_restock_list.json", "r").read()
+    restock_list = json.loads(file)
+    restocked_item = []
+
+    i = 0
+    while i < len(items):
+        if items[i]['qty'] > restock_list[i]['qty']:
+            restocked_item.append(items[i])
+        i += 1
+
+    if len(restocked_item):
+        return True, restocked_item
+    else:
+        return False, restocked_item
+
+
+def buy_item():
+    url = "https://seal-gladius.com/itemmall-bayarr"
+
+    cookies_list = {}
+    for user in user_list:
+        cookies_list[user['username']] = get_cookies(user)
+
+    for user in user_list:
+        data = {
+            "passbank": user['password_bank'],
+            "idmall": targeted_item[0]['item_id'],
+            "is_ajax": 1
+        }
+
+        send_discord_message(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
+        response = requests.post(url, data=data, cookies=cookies_list[user['username']])
+
+        data['idmall'] = targeted_item[1]['item_id']
+        send_discord_message(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
+        response = requests.post(url, data=data, cookies=cookies_list[user['username']])
+
+def parse_output(output):
+    data = []
+    texts = output.split("<td>")
     texts.pop(0)
 
     for i, text in enumerate(texts):
-        print(text[:9])
+        if text[:9] == "<img src=":
+            del texts[i]
+
+    for i, text in enumerate(texts):
         if text[:9] == "<img src=":
             del texts[i]
 
     i = 0
     while i < len(texts):
-        pass
-    print(texts)
+        texts[i] = texts[i].split("</td>")[0]
+        texts[i+1] = texts[i+1].split("</td>")[0]
+        output = {
+            "name": texts[i],
+            "qty": int(texts[i+1])
+        }
+        data.append(output)
+        i += 2
+
+    return data
 
 
 def send_discord_message(message):
+    if not sending_discord:
+        return
+
+    time = datetime.strftime(datetime.now(), '%Y-%m-%d_%H:%M')
+
     url = "https://discordapp.com/api/webhooks/802558967310057504/DltylKMUlMd0XevzX3NPh1ItQAmLjEmJRPRxvwz2ue9-Xo83Ct58HTVUc0nZCzVU9HQK"
-    requests.post(url, data={'content': message})
+    requests.post(url, data={'content': f"[{time}]\n{message}"})
 
-get_item_list()
 
-# def fetch_output():
-#     data = []
-#     tes = string.split('<td>')
-#     tes.splice(0, 1)
-#     for(let i = 0 ; i < tes.length ; i++) {
-#         if(tes[i].indexOf("<img src=") >=0) {
-#             tes.splice(i, 1)
-#         }
-#     }
-#     for(let i = 0 ; i < tes.length ; i++) {
-#         if(tes[i].indexOf("<img src=") >=0) {
-#             tes.splice(i, 1)
-#         }
-#     }
-#     for(let i = 0 ; i < tes.length ; i+=2) {
-#         tes[i] = tes[i].split("</td>")[0]
-#         tes[i+1] = tes[i+1].split("</td>")[0]
-#         let output = {
-#             name : tes[i].split("</td>")[0],
-#             stok : parseInt(tes[i+1].split("</td>")[0])
-#         }
-#         data.push(output)
-#     }
-#     let outputString = '\n'
-#     for(let i = 0 ; i < data.length ; i++) {
-#         outputString += data[i].name + " : " + data[i].stok + "\n"
-#     }
-#     return new discord.RichEmbed({
-#         title : "List Restok",
-#         description : outputString
-#     })
-#     return outputString
+while True:
+    try:
+        print("checking_item")
+        get_item_list()
+        sleep(5 * 60)
+    except:
+        continue

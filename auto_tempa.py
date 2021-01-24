@@ -35,34 +35,52 @@ def run_refine():
 
     inventory = get_inventory()
     plus = inventory[0]['plus']
+
+    write_file(f"current atb position : {last_atb_slot}")
+
     print(f"current atb position : {last_atb_slot}")
     if inventory[0]['item_id'] == 0:
         print("ITEM PECAH!!")
         discord.send_message(f"@everyone **ITEM PECAH!!** id : {user_id}")
         force_stop = True
+        write_file(f"ITEM PECAH!!")
         return
 
     if last_atb_slot == 0:
         print("purchasing ATB")
-        auto_purchase.purchase(auto_purchase.ITEM['atb'], atb_purchase_qty)
+        write_file(f"Purchasing ATB")
+        status, purchase_limit = purchase_item(auto_purchase.ITEM['atb'], atb_purchase_qty)
         sleep(1.5)
         get_atb_from_bank()
         last_atb_slot = 1
 
     if plus < 9 and plus > 6:
         print(f"refining to {plus+1}")
+        write_file(f"Refining to {plus+1}")
         refine_7_to_9(inventory)
+
     elif plus >= 9 and plus < max_tempa:
         print(f"refining to {plus+1}")
+        write_file(f"Refining to {plus+1}")
         refine_9_to_12(inventory)
+
     elif plus == 12:
         print(f"SUKSES +12 BOI")
+        write_file(f"SUKSES +12 BOI!!")
         discord.send_message(f"@everyone SUKSES JADI +12 BOII di id : {user_id}")
 
-    print("SUKSES TEMPA" if plus + 1 == get_item_result() else "GAGAL TEMPA")
+    if plus + 1 == get_item_result():
+        print("SUKSES TEMPA")
+        write_file(f"SUKSES TEMPA")
+
     if max_tempa == get_item_result():
         discord.send_message(f"@everyone SUKSES TEMPA JADI {max_tempa} di id : {user_id}")
+        write_file(f"SUKSES TEMPA KE +{max_tempa}")
         force_stop = True
+
+    if plus == 11:
+        write_file(f"Item Sukses jadi +11")
+        discord.send_message(f"Item sukses jadi +11 di id : {user_id}")
 
 
 def refine_7_to_9(inventory):
@@ -75,20 +93,20 @@ def refine_7_to_9(inventory):
 
     if not wrs:
         print("purchasing wrs")
-        auto_purchase.purchase(auto_purchase.ITEM['wrs'], wrs_brs_diamond_per_purchase)
-        qty = qty + 5
+        purchase_item(auto_purchase.ITEM['wrs'], wrs_brs_diamond_per_purchase)
+        qty = qty + wrs_brs_diamond_per_purchase
         sleep(0.5)
 
     if not brs:
         print("purchasing brs")
-        auto_purchase.purchase(auto_purchase.ITEM['brs'], wrs_brs_diamond_per_purchase)
-        qty = qty + 5
+        purchase_item(auto_purchase.ITEM['brs'], wrs_brs_diamond_per_purchase)
+        qty = qty + wrs_brs_diamond_per_purchase
         sleep(0.5)
 
     if not diamond:
         print("purchasing diamond")
-        auto_purchase.purchase(auto_purchase.ITEM['diamond'], wrs_brs_diamond_per_purchase)
-        qty = qty + 5
+        purchase_item(auto_purchase.ITEM['diamond'], wrs_brs_diamond_per_purchase)
+        qty = qty + wrs_brs_diamond_per_purchase
         sleep(0.5)
 
     if not wrs or not brs or not diamond:
@@ -127,14 +145,14 @@ def refine_9_to_12(inventory):
 
     if not pd:
         print("purchasing pd")
-        auto_purchase.purchase(auto_purchase.ITEM['pd'], pd_grs_per_purchase)
-        qty = qty + 2
+        purchase_item(auto_purchase.ITEM['pd'], pd_grs_per_purchase)
+        qty = qty + pd_grs_per_purchase
         sleep(0.5)
 
     if not grs:
         print("purchasing grs")
-        auto_purchase.purchase(auto_purchase.ITEM['grs'], pd_grs_per_purchase)
-        qty = qty + 2
+        purchase_item(auto_purchase.ITEM['grs'], pd_grs_per_purchase)
+        qty = qty + pd_grs_per_purchase
         sleep(0.5)
 
     if not pd or not grs:
@@ -264,6 +282,38 @@ def get_atb_from_bank():
     )
     sleep(0.5)
 
+def purchase_item(item_id, qty):
+    global force_stop
+
+    retry_limit = 3
+    for i in range(0, retry_limit):
+        status, purchase_limit, purchased_qty = auto_purchase.purchase(item_id, qty)
+        if not status:
+            if purchase_limit:
+                force_stop = True
+                discord.send_message(f"**Purchase Limit Reached** for id : {user_id}")
+                return
+
+            qty = qty - purchased_qty
+
+            print("purchase failed")
+            print(f"retrying to purchase {purchased_qty} more item")
+            write_file("Purchase Failed")
+            write_file(f"retrying to purchase {purchased_qty} more item")
+
+        return
+
+    print("Cannot purchase : something went wrong")
+    write_file("Cannot purchase : something went wrong")
+    discord.send_message(f"Failed Purchase : something went wrong. ID : {user_id} purchased: {purchased_qty}, remaining: qty")
+
+
+def write_file(text):
+    with open(f"_refine_log_{user_id}.txt", "a") as file:
+        time = datetime.strftime(datetime.now(), '%Y-%m-%d_%H:%M')
+        file.write(f"[{time}][{user_id}] {text}\n")
+
+
 help_text = [
     "HOTKEYS: ",
     "[-] start refine",
@@ -278,7 +328,7 @@ settings = [
     f"atb_per_purchase: {atb_per_purchase}",
     f"wrs_brs_diamond_per_purchase: {wrs_brs_diamond_per_purchase}",
     f"pd_grs_per_purchase: {pd_grs_per_purchase}",
-    "FOR PURCHASE: ",
+    "\nFOR PURCHASE: ",
     f"username: {auto_purchase.username}",
     f"password: {auto_purchase.password}",
     f"password_bank: {auto_purchase.password_bank}",

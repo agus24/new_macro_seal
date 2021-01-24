@@ -1,8 +1,8 @@
 import requests
 
 
-username = "yohanesyoshua"
-password = "faisal"
+username = "agus244"
+password = "rahasia"
 password_bank = "1111"
 
 ITEM = {
@@ -34,8 +34,12 @@ def purchase(item_id, qty=1):
         print("failed purchase")
         return None
 
+    more_qty = 0
+    purchased_qty = 0
+
     if item_id == ITEM['atb']:
         url = "https://seal-gladius.com/itemmall-bayar"
+        more_qty = 10
     elif item_id == ITEM['pd'] or item_id == ITEM['grs']:
         url = "https://seal-gladius.com/itemmall-bayarrr"
     else:
@@ -47,15 +51,17 @@ def purchase(item_id, qty=1):
         "is_ajax": 1
     }
 
-    for _ in range(0, qty):
+    for _ in range(0, qty + more_qty):
         response = requests.post(url, data=data, cookies=cookies)
         if response.status_code == 200:
             content = response.content.decode("utf-8")
             if "Success" in content:
+                purchased_qty += 1
                 print("SUKSES PURCHASE")
-            else:
-                return False
-        else: 
-            return False
+            elif "purchase limit" in content:
+                print("purchase limit reached")
+                return False, True, purchased_qty
+        else:
+            return False, False, purchased_qty
 
-    return True
+    return True, False, purchased_qty
