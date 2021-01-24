@@ -1,6 +1,8 @@
-from time import sleep
 import requests
 import json
+
+from time import sleep
+from datetime import datetime
 
 
 sending_discord = True
@@ -36,7 +38,6 @@ def get_item_list():
     cookies = get_cookies(user_list[0])
 
     url = "https://seal-gladius.com/itemmall-dataa"
-    print("checking item")
     response = requests.post(url, data={"page": 1, "jenis": 7}, cookies=cookies).content.decode("utf-8")
     items = parse_output(response)
     restock_status, restocked_item = check_restock_status(items)
@@ -127,9 +128,14 @@ def send_discord_message(message):
 
 
 while True:
+    time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
-        print("checking_item")
+        print(f"[{time}] checking item")
         get_item_list()
         sleep(5 * 60)
+    except KeyboardInterrupt:
+        print(f"[{time}] stopping")
+        break
     except:
+        print(f"[{time}] error occured: retrying")
         continue
