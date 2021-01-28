@@ -3,9 +3,11 @@ import json
 
 from time import sleep
 from datetime import datetime
+from logger import Logger
 
 
 sending_discord = True
+logger = Logger(user_id=0, file_name="restock_check")
 
 user_list = [
     {
@@ -89,12 +91,12 @@ def buy_item():
             "is_ajax": 1
         }
 
-        write_log(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
+        logger.log(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
         response = requests.post(url, data=data, cookies=cookies_list[user['username']])
         send_discord_message(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
 
         data['idmall'] = targeted_item[1]['item_id']
-        write_log(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
+        logger.log(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
         response = requests.post(url, data=data, cookies=cookies_list[user['username']])
         send_discord_message(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
 
@@ -134,20 +136,16 @@ def send_discord_message(message):
     url = "https://discordapp.com/api/webhooks/802558967310057504/DltylKMUlMd0XevzX3NPh1ItQAmLjEmJRPRxvwz2ue9-Xo83Ct58HTVUc0nZCzVU9HQK"
     requests.post(url, data={'content': f"[{time}] {message}"})
 
-def write_log(message):
-    time = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
-    print(f"[{time}] {message}")
-
 
 send_discord_message("starting bot")
 while True:
     time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
-        write_log("checking item")
+        logger.log("checking item")
         get_item_list()
         sleep(5 * 60)
     except KeyboardInterrupt:
-        write_log("stopping")
+        logger.log("stopping")
         break
     except:
         print(f"[{time}] error occured: retrying")
