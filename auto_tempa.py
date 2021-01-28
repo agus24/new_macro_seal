@@ -1,13 +1,14 @@
-import mouseSeal as mouse
 import keyboard
+import mouseSeal as mouse
 import pywinauto as p
-from time import sleep
 import macro
-import imgread as img
 import discord
+import auto_purchase
+
+from time import sleep
 from constants import *
 from datetime import datetime
-import auto_purchase
+from logger import Logger
 
 
 print("auto_tempa.py")
@@ -24,6 +25,8 @@ atb_per_purchase = 15
 wrs_brs_diamond_per_purchase = 5
 pd_grs_per_purchase = 5
 
+logger = Logger(user_id, file_name="_refine_log_")
+
 
 def get_inventory():
     return mouse.getItemValue()
@@ -36,50 +39,50 @@ def run_refine():
     inventory = get_inventory()
     plus = inventory[0]['plus']
 
-    write_file(f"current atb position : {last_atb_slot}")
+    logger.log(f"current atb position : {last_atb_slot}")
 
     print(f"current atb position : {last_atb_slot}")
     if inventory[0]['item_id'] == 0:
         print("ITEM PECAH!!")
         discord.send_message(f"@everyone **ITEM PECAH!!** id : {user_id}")
         force_stop = True
-        write_file(f"ITEM PECAH!!")
+        logger.log("ITEM PECAH!!")
         return
 
     if last_atb_slot == 0:
         print("purchasing ATB")
-        write_file(f"Purchasing ATB")
-        status, purchase_limit = purchase_item(auto_purchase.ITEM['atb'], atb_purchase_qty)
+        logger.log("Purchasing ATB")
+        purchase_item(auto_purchase.ITEM['atb'], atb_purchase_qty)
         sleep(1.5)
         get_atb_from_bank()
         last_atb_slot = 1
 
     if plus < 9 and plus > 6:
         print(f"refining to {plus+1}")
-        write_file(f"Refining to {plus+1}")
+        logger.log(f"Refining to {plus+1}")
         refine_7_to_9(inventory)
 
     elif plus >= 9 and plus < max_tempa:
         print(f"refining to {plus+1}")
-        write_file(f"Refining to {plus+1}")
+        logger.log(f"Refining to {plus+1}")
         refine_9_to_12(inventory)
 
     elif plus == 12:
-        print(f"SUKSES +12 BOI")
-        write_file(f"SUKSES +12 BOI!!")
+        print("SUKSES +12 BOI")
+        logger.log("SUKSES +12 BOI!!")
         discord.send_message(f"@everyone SUKSES JADI +12 BOII di id : {user_id}")
 
     if plus + 1 == get_item_result():
         print("SUKSES TEMPA")
-        write_file(f"SUKSES TEMPA")
+        logger.log("SUKSES TEMPA")
 
     if max_tempa == get_item_result():
         discord.send_message(f"@everyone SUKSES TEMPA JADI {max_tempa} di id : {user_id}")
-        write_file(f"SUKSES TEMPA KE +{max_tempa}")
+        logger.log(f"SUKSES TEMPA KE +{max_tempa}")
         force_stop = True
 
     if plus == 11:
-        write_file(f"Item Sukses jadi +11")
+        logger.log("Item Sukses jadi +11")
         discord.send_message(f"Item sukses jadi +11 di id : {user_id}")
 
 
@@ -196,10 +199,10 @@ def get_item_from_bank(qty):
     sleep(0.5)
     k.send_keys('{ENTER}')
     sleep(1)
-    k.send_keys( '{1 down}' '{1 up}' )
-    k.send_keys( '{1 down}' '{1 up}' )
-    k.send_keys( '{1 down}' '{1 up}' )
-    k.send_keys( '{1 down}' '{1 up}' )
+    k.send_keys('{1 down}' '{1 up}')
+    k.send_keys('{1 down}' '{1 up}')
+    k.send_keys('{1 down}' '{1 up}')
+    k.send_keys('{1 down}' '{1 up}')
     k.send_keys('{ENTER}')
     sleep(0.5)
     for i in range(0, qty + 2):
@@ -282,6 +285,7 @@ def get_atb_from_bank():
     )
     sleep(0.5)
 
+
 def purchase_item(item_id, qty):
     global force_stop
 
@@ -298,20 +302,15 @@ def purchase_item(item_id, qty):
 
             print("purchase failed")
             print(f"retrying to purchase {purchased_qty} more item")
-            write_file("Purchase Failed")
-            write_file(f"retrying to purchase {purchased_qty} more item")
+            logger.log("Purchase Failed")
+            logger.log(f"retrying to purchase {purchased_qty} more item")
 
         return
 
     print("Cannot purchase : something went wrong")
-    write_file("Cannot purchase : something went wrong")
-    discord.send_message(f"Failed Purchase : something went wrong. ID : {user_id} purchased: {purchased_qty}, remaining: qty")
-
-
-def write_file(text):
-    with open(f"_refine_log_{user_id}.txt", "a") as file:
-        time = datetime.strftime(datetime.now(), '%Y-%m-%d_%H:%M')
-        file.write(f"[{time}][{user_id}] {text}\n")
+    logger.log("Cannot purchase : something went wrong")
+    message = f"Failed Purchase : something went wrong. ID : {user_id} purchased: {purchased_qty}, remaining: qty"
+    discord.send_message(message)
 
 
 help_text = [

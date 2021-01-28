@@ -363,3 +363,12 @@ ITEM_BANK = (
     (250, 409),
     (288, 409),
 )
+
+DIALOG = {
+    "none": 0,
+    "bank": 19,
+    "shop": 5,
+    "speak": 10,
+    "transaction": 11,
+    "inden": 36,
+}

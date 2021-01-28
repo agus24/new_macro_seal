@@ -3,6 +3,7 @@ import mouseSeal as mouse
 from time import sleep
 import pywinauto as p
 import imgread as img
+from constants import DIALOG
 
 k = p.keyboard
 delay = 0.3
@@ -154,22 +155,21 @@ def closeBSIfOpen() :
     if checkBank() :
         k.send_keys("{VK_ESCAPE}")
 
-def checkBank() :
-    if img.checkImage("./img/bank.jpg") :
-        return True
-    return False
+def checkBank():
+    return mouse.get_freeze_dialog() == DIALOG['bank']
 
-def checkShop() :
-    if img.checkImage("./img/shop.jpg"):
-        return True
-    return False
+def checkShop():
+    return mouse.get_freeze_dialog() == DIALOG['shop']
 
-def checkInven() :
+def checkItemBank():
+    return mouse.get_item_bank_status() == 1
+
+def checkInven():
     if img.checkImage("./img/item.jpg"):
         return True
     return False
 
-def checkCash() :
+def checkCash():
     if img.checkImage("./img/cash.jpg"):
         return True
     return False

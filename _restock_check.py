@@ -12,6 +12,10 @@ user_list = [
         "username": "agus24",
         "password": "Rahasia24",
         "password_bank": "1122"
+    }, {
+        "username": "agus24444",
+        "password": "rahasia",
+        "password_bank": "rahasia"
     }
 ]
 
@@ -43,8 +47,10 @@ def get_item_list():
     restock_status, restocked_item = check_restock_status(items)
 
     if restock_status:
-        list_of_item = [f"{item['name']} : {item['qty']}" for item in restocked_item]
-        send_discord_message("**Item Restocked**\n\n**List of item:** \n\n" + "\n".join(list_of_item))
+        list_of_item = []
+        for index, item in enumerate(restocked_item):
+            list_of_item.append(f"{item['name']} : {item['qty']} -> {items[index]['qty']}")
+        send_discord_message("@everyone\n**Item Restocked**\n\n**List of item:** \n\n" + "\n".join(list_of_item))
         buy_item()
 
     f = open("_restock_list.json", "w")
@@ -83,12 +89,14 @@ def buy_item():
             "is_ajax": 1
         }
 
-        send_discord_message(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
+        write_log(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
         response = requests.post(url, data=data, cookies=cookies_list[user['username']])
+        send_discord_message(f"Purchasing item **{targeted_item[0]['item_name']}** for: **{user['username']}**")
 
         data['idmall'] = targeted_item[1]['item_id']
-        send_discord_message(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
+        write_log(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
         response = requests.post(url, data=data, cookies=cookies_list[user['username']])
+        send_discord_message(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
 
 def parse_output(output):
     data = []
@@ -124,17 +132,22 @@ def send_discord_message(message):
     time = datetime.strftime(datetime.now(), '%Y-%m-%d_%H:%M')
 
     url = "https://discordapp.com/api/webhooks/802558967310057504/DltylKMUlMd0XevzX3NPh1ItQAmLjEmJRPRxvwz2ue9-Xo83Ct58HTVUc0nZCzVU9HQK"
-    requests.post(url, data={'content': f"[{time}]\n{message}"})
+    requests.post(url, data={'content': f"[{time}] {message}"})
+
+def write_log(message):
+    time = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M")
+    print(f"[{time}] {message}")
 
 
+send_discord_message("starting bot")
 while True:
     time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
-        print(f"[{time}] checking item")
+        write_log("checking item")
         get_item_list()
         sleep(5 * 60)
     except KeyboardInterrupt:
-        print(f"[{time}] stopping")
+        write_log("stopping")
         break
     except:
         print(f"[{time}] error occured: retrying")

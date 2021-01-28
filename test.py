@@ -1,3 +1,4 @@
+import os
 import psutil
 import pymem
 import time
@@ -14,17 +15,12 @@ def getProcess() :
     return False
 
 
-def getItemValue() :
-    slot = []
-    item = []
-    for i in range(0, 40) :
-        calc = (pointerStat) + 1056 + (116*i)
-        # print(calc)
-        slot.append(calc)
-        item.append(pymem.memory.read_short(pc, calc))
-    return item
+def getItemValue():
+    calc = (pointerStat) + 1056 + (116)
+    pymem.memory.read_short(pc, calc)
 
 inputData = None
+print(os.path.basename(__file__))
 
 while True :
     pm = pymem.Pymem()
@@ -34,13 +30,13 @@ while True :
         pc = pymem.process.open(pid)
         baseAddressMouse = int(0x400000) + int(0x00DD5F24)
         baseAddressStat = int(0x400000) + int(0x003DA400)        
-        pointerStat = pymem.memory.read_int(pc, baseAddressStat)
-        try :
+        try:
+            pointerStat = pymem.memory.read_int(pc, baseAddressStat)
             getItemValue()
             print(pid)
-        except :
+        except:
             print("error")
-        else :
+        else:
             print(
                 "1. cegel\n",
                 "2. ant nest\n",
@@ -50,7 +46,7 @@ while True :
                 "0. ts\n"
             )
             inputData = input("Answer ? ") or "0"
-    else :
+    else:
         print('process not found')
     if inputData == "1":
         print("opening cegel.py")

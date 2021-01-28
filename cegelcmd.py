@@ -1,107 +1,95 @@
+import mouseSeal as mouse
 import keyboard
-from time import sleep
-import pyautogui
 import pywinauto as p
-import win32api
+from time import sleep
 import macro
 import imgread as img
-import checkProcess
+from logger import Logger
 
 
-class Macro():
+print("cegelcmd.py")
+user_id = mouse.getUserId()
+inventory = []
+k = p.keyboard
+target = 0
+force_stop = False
 
-    def __init__(self):
-        import mouseSeal as mouse
+logger = Logger(user_id, "cegelcmd_")
 
-        self.mouse = mouse
-        self.k = p.keyboard
-        self.m = p.mouse
 
-        print(
-            "PID : "+ str(self.mouse.getPid()) + "\n"
-        )
-
-        start = True
-        # i = imagesearch
-        while start:
-            if keyboard.is_pressed('-') :
-                print("Starting Hunt..")
-                runHunt()
-            if keyboard.is_pressed(']') :
-                self.mouse.getPosition()
-                # mouse.getItemQty()
-                sleep(0.3)
-
-            if keyboard.is_pressed('=') :
-                print('Script Stopped.')
-                start = False
-                break
-
-            if checkProcess.check_pid() :
-                start = False
-                break
-
-    def sellItem(self) :
-        print('Selling Item..')
-        self.mouse.moveMouse(555, 227)
+def sellItem():
+    logger.log("Selling Item")
+    while not macro.checkShop():
+        mouse.moveMouse(555, 227)
         sleep(0.5)
-        self.macro.mouseClick()
+        macro.mouseClick()
         sleep(0.5)
-        while img.checkImage("./img/shop.jpg") == False :
-            self.k.send_keys('{ENTER}')
-            sleep(0.5)
-            self.mouse.moveMouse(394, 296)
-            self.macro.mouseClick()
-            sleep(0.5)
+        k.send_keys('{ENTER}')
         sleep(0.5)
-        self.macro.sellSlot1()
-        self.macro.sellSlot2()
-        self.macro.sellSlot3()
-        self.macro.sellSlot4()
-        self.macro.sellSlot5()
-        sleep(1)
-        print("escape")
+        mouse.moveMouse(394, 296)
+        macro.mouseClick()
+        sleep(0.5)
+    sleep(0.5)
+    macro.sellSlot1()
+    macro.sellSlot2()
+    macro.sellSlot3()
+    macro.sellSlot4()
+    macro.sellSlot5()
+    sleep(1)
+    logger.log("escape")
 
-    def runHunt(self) :
-        print("Hunt Started..")
-        # pos = i.imagesearch("./img/shop.JPG")
-        start_hunt = True
-        while start_hunt :
-            if img.checkImage("./img/shop.jpg") :
-                sleep(0.5)
-                self.k.send_keys("{VK_ESCAPE}")
-            self.mouse.moveMouse(379, 335)
-            macro.mouseClick()
-            if keyboard.is_pressed('c') :
-                print('Hunt Stopped.')
-                start_hunt = False
+
+def buyPotion():
+    logger.log("buying potion")
+    macro.buyPot()
+    sleep(0.1)
+    logger.log("bank : " + str(macro.checkBank()))
+    logger.log("shop : " + str(macro.checkShop()))
+    sleep(0.1)
+
+
+def run_cegel():
+    global force_stop
+    macro.closeBSIfOpen()
+    mouse.setTarget(target)
+    # logger.log(f"target : {str(target)}")
+    inventory = mouse.getItemValue()
+    k.send_keys('{SPACE}')
+    k.send_keys('{F1}')
+    k.send_keys('{SPACE}')
+    k.send_keys('{SPACE}')
+    if inventory[32]['qty'] < 150 or inventory[33]['qty'] < 150:
+        buyPotion()
+        sleep(0.5)
+    for i in range(0, 8):
+        if inventory[i]['qty'] >= 250:
+            logger.log('Item Full Detected.')
+            sellItem()
+            logger.log("Hunt Continue..")
+    if keyboard.is_pressed('c'):
+        logger.log('stopping.')
+        force_stop = True
+
+
+while True:
+    if keyboard.is_pressed('-'):
+        logger.log("Start Cegel Hunt..")
+        force_stop = False
+        i = 0
+        while True:
+            if force_stop:
                 break
-            inventory = self.mouse.getItemValue()
-            print(inventory)
-            for i in range(0,5) :
-                if inventory[i] == 300 :
-                    print('Item Full Detected.')
-                    sellItem()
-                    print("Hunt Continue..")
-            self.k.send_keys(
-                "{q down}"
-                "{q up}"
-            )
-            sleep(0.5)
-            self.k.send_keys(
-                "{F5}"
-            )
-            sleep(2)
-            for x in range(0,10) :
-                self.k.send_keys("{SPACE}")
-                sleep(0.05)
-                self.k.send_keys("{SPACE}")
-                sleep(0.05)
-                self.k.send_keys("{SPACE}")
-                sleep(0.05)
-                self.k.send_keys("{SPACE}")
-                sleep(0.05)
-                if keyboard.is_pressed('c') :
-                    print('Hunt Stopped.')
-                    start_hunt = False
-                    break
+            run_cegel()
+    if keyboard.is_pressed('='):
+        logger.log('Script Stopped.')
+        start = False
+        break
+    if keyboard.is_pressed("/"):
+        logger.log(mouse.getCurrentTarget())
+        target = mouse.getCurrentTarget()
+        mouse.setTarget(mouse.getCurrentTarget())
+        sleep(0.2)
+
+    if keyboard.is_pressed(']'):
+        mouse.getPosition()
+        sleep(0.2)
