@@ -154,6 +154,7 @@ while True:
         sleep(5 * 60)
     except KeyboardInterrupt:
         logger.log("stopping")
+        send_discord_message("stopping bot")
         break
     except:
         print(f"[{time}] error occured: retrying")
