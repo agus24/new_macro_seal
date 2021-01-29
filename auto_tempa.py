@@ -45,7 +45,9 @@ def run_refine():
     print(f"current atb position : {last_atb_slot}")
     if inventory[0]['item_id'] == 0:
         print("ITEM PECAH!!")
-        discord.send_message(f"@everyone **ITEM PECAH!!** id : {user_id}")
+        time = datetime.now().strftime("%Y-%m-%d %H:%M")
+        text = f"@everyone \n**ITEM PECAH!!** \nid : {user_id}\nIgn: \ntgl jam : {time}\n item: \nkronologi: lupa atb"
+        discord.send_message(text)
         force_stop = True
         logger.log("ITEM PECAH!!")
         return
@@ -123,12 +125,11 @@ def refine_7_to_9(inventory):
         force_stop = True
         return
 
-    if mouse.get_freeze_dialog() == DIALOG['transaction']:
+    while mouse.get_freeze_dialog() == DIALOG['transaction']:
         mouse.moveMouse(396, 290)
         sleep(0.2)
         macro.mouseClick()
-
-    macro.mouseClick()
+        macro.mouseClick()
 
     move_item(REFINE_INVENTORY[0], REFINE_ITEM)
     move_item(REFINE_INVENTORY[diamond], REFINE_GEM)
@@ -172,10 +173,11 @@ def refine_9_to_12(inventory):
         force_stop = True
         return
 
-    mouse.moveMouse(396, 290)
-    sleep(0.2)
-    macro.mouseClick()
-    macro.mouseClick()
+    while mouse.get_freeze_dialog() == DIALOG['transaction']:
+        mouse.moveMouse(396, 290)
+        sleep(0.2)
+        macro.mouseClick()
+        macro.mouseClick()
 
     move_item(REFINE_INVENTORY[0], REFINE_ITEM)
     move_item(REFINE_INVENTORY[pd], REFINE_GEM)
