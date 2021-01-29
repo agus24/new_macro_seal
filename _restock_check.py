@@ -18,6 +18,10 @@ user_list = [
         "username": "agus24444",
         "password": "rahasia",
         "password_bank": "rahasia"
+    }, {
+        "username": "icangfaisal11",
+        "password": "faisala",
+        "password_bank": "1111"
     }
 ]
 
