@@ -228,12 +228,7 @@ def get_item_from_bank(qty):
         sleep(0.2)
 
     while mouse.get_freeze_dialog() == DIALOG['bank']:
-        k.send_keys(
-            "{VK_LMENU down}"
-            "{v down}"
-            "{v up}"
-            "{VK_LMENU up}"
-        )
+        k.send_keys("{VK_ESCAPE}")
         sleep(0.5)
         mouse.moveMouse(292, 83)
         sleep(0.5)
