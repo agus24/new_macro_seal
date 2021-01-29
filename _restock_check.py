@@ -145,7 +145,8 @@ def send_discord_message(message):
     requests.post(url, data={'content': f"[{time}] {message}"})
 
 
-send_discord_message(f"starting bot\nusernames : {",".join(get_active_users())}")
+usernames = ",".join(get_active_users())
+send_discord_message(f"starting bot\nusernames : {usernames}")
 while True:
     time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
