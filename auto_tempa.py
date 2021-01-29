@@ -17,13 +17,14 @@ print(user_id)
 # deret sini jgn di ubah
 k = p.keyboard
 last_atb_slot = 1
-max_tempa = 11
 force_stop = False
 
-atb_purchase_qty = 20
-atb_per_purchase = 15
-wrs_brs_diamond_per_purchase = 5
-pd_grs_per_purchase = 5
+# SETTINGS
+atb_purchase_qty = 25  # qty atb per beli barang
+atb_per_purchase = 20  # qty atb yang digunakan
+wrs_brs_diamond_per_purchase = 5  # wrs diamond sekali beli
+pd_grs_per_purchase = 5  # pd grs sekali beli
+max_tempa = 11  # target tempa (kalo 11 sampe +11 klo 12 sampe +12)
 
 logger = Logger(user_id, file_name="_refine_log_")
 
@@ -217,10 +218,11 @@ def get_item_from_bank(qty):
         k.send_keys('{ENTER}')
         sleep(0.2)
 
-    sleep(0.5)
-    mouse.moveMouse(292, 83)
-    sleep(0.5)
-    macro.mouseClick()
+    while mouse.get_freeze_dialog() == DIALOG['bank']:
+        sleep(0.5)
+        mouse.moveMouse(292, 83)
+        sleep(0.5)
+        macro.mouseClick()
 
 
 def move_item(position1, position2):
@@ -264,7 +266,7 @@ def get_atb_from_bank():
     sleep(0.3)
     k.send_keys('{ENTER}')
     sleep(0.5)
-    for i in range(0, atb_purchase_qty + 1):
+    for i in range(0, atb_per_purchase + 3):
         mouse.moveMouse(ITEM_BANK[i][0], ITEM_BANK[i][1])
         macro.mouseDown()
         mouse.moveMouse(410, 195)
@@ -273,9 +275,11 @@ def get_atb_from_bank():
         k.send_keys('{ENTER}')
 
     sleep(0.5)
-    mouse.moveMouse(292, 76)
-    sleep(0.5)
-    macro.mouseClick()
+    while mouse.get_item_bank_status() == 1:
+        mouse.moveMouse(292, 76)
+        sleep(0.5)
+        macro.mouseClick()
+
     sleep(1)
     k.send_keys(
         "{VK_LMENU down}"
@@ -327,7 +331,8 @@ settings = [
     f"atb_per_purchase: {atb_per_purchase}",
     f"wrs_brs_diamond_per_purchase: {wrs_brs_diamond_per_purchase}",
     f"pd_grs_per_purchase: {pd_grs_per_purchase}",
-    "\nFOR PURCHASE: ",
+    f"max_tempa: {max_tempa}",
+    "\n\nFOR PURCHASE: ",
     f"username: {auto_purchase.username}",
     f"password: {auto_purchase.password}",
     f"password_bank: {auto_purchase.password_bank}",

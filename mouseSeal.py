@@ -28,15 +28,15 @@ pc = pymem.process.open(pid)
 module = pm.process_base
 
 scan_result = []
-print(dir(pm.process_base))
+# print(dir(pm.process_base))
 
-print(
-    pm.process_base.lpBaseOfDll,
-    pm.process_base.SizeOfImage,
-    pm.process_base.EntryPoint
-)
+# print(
+#     pm.process_base.lpBaseOfDll,
+#     pm.process_base.SizeOfImage,
+#     pm.process_base.EntryPoint
+# )
 
-print(module)
+# print(module)
 
 baseAddressMouse = int(0x400000) + int(0x00DD5F24)
 baseAddressStat = int(0x400000) + int(0x003DA400)
