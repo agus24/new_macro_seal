@@ -26,6 +26,14 @@ targeted_item = [
     {"item_id": 78057, "item_name": "Refinement GXG1"},
 ]
 
+
+def get_active_users():
+    users = []
+    for user in user_list:
+        users.append(user['username'])
+
+    return users
+
 def get_cookies(user):
     url = "https://seal-gladius.com/login"
     data = {
@@ -137,7 +145,7 @@ def send_discord_message(message):
     requests.post(url, data={'content': f"[{time}] {message}"})
 
 
-send_discord_message("starting bot")
+send_discord_message(f"starting bot\nusernames : {",".join(get_active_users())}")
 while True:
     time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
@@ -149,4 +157,5 @@ while True:
         break
     except:
         print(f"[{time}] error occured: retrying")
+        sleep(1)
         continue
