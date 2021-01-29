@@ -1,12 +1,13 @@
 import requests
 import json
+import re
 
 from time import sleep
 from datetime import datetime
 from logger import Logger
 
 
-sending_discord = True
+sending_discord = False
 logger = Logger(user_id=0, file_name="restock_check")
 
 user_list = [
@@ -22,6 +23,10 @@ user_list = [
         "username": "icangfaisal11",
         "password": "faisala",
         "password_bank": "1111"
+    }, {
+        "username": "adriananatasena",
+        "password": "p4j7wgkrmt",
+        "password_bank": "1234"
     }
 ]
 
@@ -51,6 +56,7 @@ def get_cookies(user):
         return response.cookies
 
     return None
+
 
 def get_item_list():
     cookies = get_cookies(user_list[0])
@@ -112,6 +118,7 @@ def buy_item():
         response = requests.post(url, data=data, cookies=cookies_list[user['username']])
         send_discord_message(f"Purchasing item **{targeted_item[1]['item_name']}** for: **{user['username']}**")
 
+
 def parse_output(output):
     data = []
     texts = output.split("<td>")
@@ -149,19 +156,19 @@ def send_discord_message(message):
     requests.post(url, data={'content': f"[{time}] {message}"})
 
 
-usernames = ",".join(get_active_users())
+usernames = ", ".join(get_active_users())
 send_discord_message(f"starting bot\nusernames : **{usernames}**")
 while True:
     time = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
     try:
         logger.log("checking item")
         get_item_list()
-        sleep(5 * 60)
+        sleep(2 * 60)
     except KeyboardInterrupt:
         logger.log("stopping")
         send_discord_message("stopping bot")
         break
-    except:
-        print(f"[{time}] error occured: retrying")
-        sleep(1)
-        continue
+    # except:
+    #     print(f"[{time}] error occured: retrying")
+    #     sleep(1)
+    #     continue
