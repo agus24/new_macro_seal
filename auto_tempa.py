@@ -123,9 +123,11 @@ def refine_7_to_9(inventory):
         force_stop = True
         return
 
-    mouse.moveMouse(396, 290)
-    sleep(0.2)
-    macro.mouseClick()
+    if mouse.get_freeze_dialog() == DIALOG['transaction']:
+        mouse.moveMouse(396, 290)
+        sleep(0.2)
+        macro.mouseClick()
+
     macro.mouseClick()
 
     move_item(REFINE_INVENTORY[0], REFINE_ITEM)
