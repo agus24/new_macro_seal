@@ -20,8 +20,8 @@ last_atb_slot = 1
 force_stop = False
 
 # SETTINGS
-atb_purchase_qty = 25  # qty atb per beli barang
-atb_per_purchase = 20  # qty atb yang digunakan
+atb_purchase_qty = 20  # qty atb per beli barang
+atb_per_purchase = 15  # qty atb yang digunakan
 wrs_brs_diamond_per_purchase = 5  # wrs diamond sekali beli
 pd_grs_per_purchase = 5  # pd grs sekali beli
 max_tempa = 11  # target tempa (kalo 11 sampe +11 klo 12 sampe +12)
@@ -125,11 +125,7 @@ def refine_7_to_9(inventory):
         force_stop = True
         return
 
-    while mouse.get_freeze_dialog() == DIALOG['transaction']:
-        mouse.moveMouse(396, 290)
-        sleep(0.2)
-        macro.mouseClick()
-        macro.mouseClick()
+    open_refine()
 
     move_item(REFINE_INVENTORY[0], REFINE_ITEM)
     move_item(REFINE_INVENTORY[diamond], REFINE_GEM)
@@ -173,11 +169,7 @@ def refine_9_to_12(inventory):
         force_stop = True
         return
 
-    while mouse.get_freeze_dialog() == DIALOG['transaction']:
-        mouse.moveMouse(396, 290)
-        sleep(0.2)
-        macro.mouseClick()
-        macro.mouseClick()
+    open_refine()
 
     move_item(REFINE_INVENTORY[0], REFINE_ITEM)
     move_item(REFINE_INVENTORY[pd], REFINE_GEM)
@@ -190,6 +182,18 @@ def refine_9_to_12(inventory):
     sleep(8)
 
 
+def open_refine():
+    print(mouse.get_freeze_dialog() == DIALOG['refine'])
+    print(mouse.get_freeze_dialog() == DIALOG['transaction'])
+    print(mouse.get_freeze_dialog())
+    while mouse.get_freeze_dialog() == 0:
+        mouse.moveMouse(396, 290)
+        sleep(0.2)
+        macro.mouseClick()
+    while mouse.get_freeze_dialog() == DIALOG['transaction']:
+        macro.mouseClick()
+
+
 def find_item_position(item_id):
     inventory = get_inventory()
     for inven in inventory:
@@ -198,12 +202,13 @@ def find_item_position(item_id):
 
 
 def get_item_from_bank(qty):
-    mouse.moveMouse(548, 231)
-    sleep(0.5)
-    macro.mouseClick()
-    sleep(0.5)
-    k.send_keys('{ENTER}')
-    sleep(1)
+    while mouse.get_freeze_dialog() == 0:
+        mouse.moveMouse(548, 231)
+        sleep(0.5)
+        macro.mouseClick()
+        sleep(0.5)
+        k.send_keys('{ENTER}')
+        sleep(1)
     k.send_keys('{1 down}' '{1 up}')
     k.send_keys('{1 down}' '{1 up}')
     k.send_keys('{1 down}' '{1 up}')
@@ -270,7 +275,7 @@ def get_atb_from_bank():
     sleep(0.3)
     k.send_keys('{ENTER}')
     sleep(0.5)
-    for i in range(0, atb_per_purchase + 3):
+    for i in range(0, atb_per_purchase + 5):
         mouse.moveMouse(ITEM_BANK[i][0], ITEM_BANK[i][1])
         macro.mouseDown()
         mouse.moveMouse(410, 195)

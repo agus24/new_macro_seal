@@ -371,4 +371,5 @@ DIALOG = {
     "speak": 10,
     "transaction": 11,
     "inden": 36,
+    "refine": 26,
 }
