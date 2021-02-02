@@ -58,8 +58,8 @@ def moveMouse(x, y):
 
 
 def getPosition():
-    print("X: " + str(pm.read_short(mouseX)))
-    print("Y: " + str(pm.read_short(mouseY)))
+    print("(x, y)")
+    print(f"({pm.read_short(mouseX)}, {pm.read_short(mouseY)})")
 
 
 def getStatList():

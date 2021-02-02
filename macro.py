@@ -6,7 +6,7 @@ import imgread as img
 from constants import DIALOG
 
 k = p.keyboard
-delay = 0.3
+delay = 0.5
 
 slot = [
     [301, 86],
@@ -73,7 +73,7 @@ def sellSlot4() :
 def sellSlot5() :
     sell(417, 95)
 
-def itemToBank() :
+def itemToBank():
     mouse.moveMouse(790, 228)
     sleep(delay)
     mouseClick()

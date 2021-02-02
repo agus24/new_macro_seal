@@ -43,6 +43,7 @@ while True :
                 "3. inden\n",
                 "4. ant crus\n",
                 "5. auto tempa\n",
+                "6. farm srs\n",
                 "0. ts\n"
             )
             inputData = input("Answer ? ") or "0"
@@ -63,6 +64,9 @@ while True :
     elif inputData == "5":
         print("opening auto_tempa.py")
         import auto_tempa
+    elif inputData == "6":
+        print("opening srs_hunt.py")
+        import srs_hunt
     elif inputData == "0":
         print("opening ts.py")
         import ts

@@ -24,6 +24,8 @@ while True:
     if keyboard.is_pressed("-"):
         print(mouse.get_freeze_dialog())
         print(mouse.get_item_bank_status())
+        print(mouse.getItemValue())
+        print(mouse.getPosition())
         sleep(0.2)
 
     if keyboard.is_pressed("]"):
