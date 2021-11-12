@@ -21,4 +21,4 @@ pywinauto==0.6.8
 requests==2.25.1
 six==1.15.0
 sty==1.0.0b12
-urllib3==1.26.2
+urllib3==1.26.5
